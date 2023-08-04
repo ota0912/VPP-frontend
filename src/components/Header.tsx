@@ -5,7 +5,7 @@ type headerProps = {
   setHamOpen: (value: boolean) => void;
 }
 
-const Header = ({hamOpen,setHamOpen}:headerProps) => {
+const Header:React.FC<headerProps> = ({hamOpen,setHamOpen}) => {
 
   const [top, setTop] = useState<boolean>(true);
 

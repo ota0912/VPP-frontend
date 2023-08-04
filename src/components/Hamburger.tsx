@@ -2,7 +2,7 @@ type hamburgerProps = {
     setHamOpen: (value: boolean) => void;
 }
 
-const Hamburger = ({setHamOpen}:hamburgerProps) => {
+const Hamburger:React.FC<hamburgerProps> = ({setHamOpen}) => {
   return (
     <div data-aos="fade-up" data-aos-duration="300" className="top-[4rem] absolute w-full menu-height bg-black z-50 flex flex-col justify-start items-center gap-8 py-8" onClick={()=>{setHamOpen(false)}}>
         <a href="#home" className="cursor-pointer py-2 text-white font-semibold font-sans text-3xl">Home</a>

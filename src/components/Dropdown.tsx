@@ -6,7 +6,7 @@ type dropdownProps = {
     setContent: (value: string) => void;
 }
 
-const Dropdown = ({items,content,setContent}:dropdownProps) => {
+const Dropdown:React.FC<dropdownProps> = ({items,content,setContent}) => {
 
   const dropItems = items.map((item,index) =>
     <li key={index} className="py-1 px-4 text-black text-ellipsis whitespace-nowrap font-sans text-2xl overflow-x-hidden hover:bg-indigo-200 cursor-pointer max-sm:text-2xl"

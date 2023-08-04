@@ -1,6 +1,6 @@
 import Github from "./../assets/Github.svg"
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <div className="bg-black flex flex-row justify-center py-12 px-40 gap-32 items-center mt-20 max-xl:px-20 max-lg:px-0 max-lg:gap-16 max-sm:flex-col max-sm:items-center max-sm:gap-6  max-lg:mt-4 absolute -z-10 w-full">
         <h2 className="text-light-gray font-normal font-sans text-3xl basis-1/3 max-sm:hidden">"Enabling data-driven projections for future vaccine procurement needs."</h2>

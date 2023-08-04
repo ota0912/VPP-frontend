@@ -18,7 +18,7 @@ const Header = ({hamOpen,setHamOpen}:headerProps) => {
   }, [top]);
 
   return (
-    <div className={`bg-white z-10 px-40 py-4 top-0 flex flex-row justify-evenly sticky ${!top && `shadow-xl`} max-xl:px-20 max-lg:px-8 max-md:justify-between max-md:py-2`}>
+    <div className={`bg-white z-10 px-40 py-4 top-0 flex flex-row justify-evenly sticky ${!top && `shadow-xl`} max-xl:px-20 max-lg:px-8 max-md:justify-between`}>
       <div className="basis-1/3 max-md:basis-0">
         <h1 className="py-1 text-black font-extrabold font-sans text-4xl max-sm:text-3xl max-md:py-0">VPP</h1>
       </div>

@@ -22,7 +22,7 @@ const Dropdown = ({items,content,setContent}:dropdownProps) => {
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (divRef.current && !divRef.current.contains(event.target as Node)) {
-        setDstate(false); // Set dstate to false when clicked outside the dropdown
+        setDstate(false); 
       }
     }
     document.addEventListener('mousedown', handleClickOutside);

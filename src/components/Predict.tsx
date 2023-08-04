@@ -13,7 +13,7 @@ const Predict:React.FC = () => {
   const [year, setYear] = useState<string>("Select a Year")
 
   return (
-    <div id="predict" className="px-40 flex flex-col justify-evenly text-center max-xl:px-20 max-sm:px-8">
+    <div id="predict" className="px-40 flex flex-col justify-evenly text-center max-xl:px-20 max-sm:px-8 max-md:mt-8">
         <h1 className="text-black font-bold font-sans text-6xl max-sm:text-4xl">Prediction Model</h1>
         <p className="py-5 text-gray-600 font-normal font-sans text-3xl max-sm:text-xl">Ready to predict? Simply choose a vaccine and state. Then set an adequate goal year till which you would like to reach your vaccination goals. Once done, simply click Predict!</p>
         <div className="py-5 flex flex-row justify-evenly items-center max-xl:gap-12 max-lg:flex-col max-lg:gap-0">

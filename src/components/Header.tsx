@@ -29,9 +29,9 @@ const Header = ({hamOpen,setHamOpen}:headerProps) => {
         <a href="#predict" className="cursor-pointer rounded px-6 py-2 bg-black text-white font-semibold font-sans text-2xl">Predict</a>
       </div>
       <div className="relative cursor-pointer md:hidden mt-2" onClick={()=>{setHamOpen(!hamOpen)}}>
-        <div className={`bg-black w-8 h-1 rounded transition-all duration-500 ${hamOpen && 'rotate-45 translate-y-2'}`}></div>
-        <div className={`bg-black w-8 h-1 rounded transition-all duration-500 ${hamOpen && 'bg-transparent'} my-1`}></div>
-        <div className={`bg-black w-8 h-1 rounded transition-all duration-500 ${hamOpen && '-rotate-45 -translate-y-2'}`}></div>
+        <div className={`bg-black w-8 h-1 rounded transition-all duration-300 ${hamOpen && 'rotate-45 translate-y-2'}`}></div>
+        <div className={`bg-black w-8 h-1 rounded transition-all duration-300 ${hamOpen && 'bg-transparent'} my-1`}></div>
+        <div className={`bg-black w-8 h-1 rounded transition-all duration-300 ${hamOpen && '-rotate-45 -translate-y-2'}`}></div>
       </div>
     </div>
   )

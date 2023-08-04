@@ -9,12 +9,6 @@ export default {
       colors:{
         'light-gray': '#CCCCCC',
       },
-      width: {
-        '104': '26rem',
-      },
-      height: {
-        '112': '28.75rem',
-      }
     },
   },
   plugins: [],

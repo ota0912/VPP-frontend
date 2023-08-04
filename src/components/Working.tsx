@@ -2,7 +2,7 @@ import FlowChart from "./../assets/FlowChart.svg"
 
 const Working:React.FC = () => {
   return (
-    <div id="working" className="px-40 py-36 flex flex-row justify-evenly gap-24 max-xl:flex-col-reverse max-xl:text-center max-xl:items-center max-xl:gap-12 max-xl:py-20 max-xl:px-20 max-sm:px-8 max-md:py-14 max-md:gap-6 max-sm:py-6">
+    <div id="working" data-aos="fade-up" data-aos-duration="800" className="px-40 py-36 flex flex-row justify-evenly gap-24 max-xl:flex-col-reverse max-xl:text-center max-xl:items-center max-xl:gap-12 max-xl:py-20 max-xl:px-20 max-sm:px-8 max-md:py-14 max-md:gap-6 max-sm:py-6">
       <img className="w-96 h-[28.75rem]" src={FlowChart} alt="Clinic Illustration" />
       <div>
         <h1 className="text-black font-bold font-sans text-6xl max-sm:text-4xl">How does it work?</h1>

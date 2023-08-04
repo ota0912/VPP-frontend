@@ -8,8 +8,8 @@ type dropdownProps = {
 
 const Dropdown = ({items,content,setContent}:dropdownProps) => {
 
-  const dropItems = items.map((item) =>
-    <li className="py-1 px-4 text-black text-ellipsis font-sans text-xl overflow-x-hidden hover:bg-indigo-200 cursor-pointer max-sm:text-2xl"
+  const dropItems = items.map((item,index) =>
+    <li key={index} className="py-1 px-4 text-black text-ellipsis font-sans text-xl overflow-x-hidden hover:bg-indigo-200 cursor-pointer max-sm:text-2xl"
     onClick={()=>{setDstate(!dstate);setContent(item);}}>
         {item}
     </li>
@@ -37,7 +37,7 @@ const Dropdown = ({items,content,setContent}:dropdownProps) => {
             onClick={()=>{setDstate(!dstate)}}>
             <h3 className="font-sans text-3xl max-sm:text-2xl">{content}</h3>
         </div>
-        <div className={`shadow-2xl z-10 bg-white absolute border-2 border-black rounded mt-2 py-2 w-60 max-h-64 overflow-y-auto ${!dstate && 'hidden'} max-lg:w-96 max-sm:w-72 max-[340px]:w-60`}>
+        <div className={`shadow-2xl z-10 bg-white absolute border-2 border-black rounded mt-2 py-2 w-60 max-h-64 overflow-y-auto ${!dstate && 'hidden'} max-lg:w-96 max-sm:w-72 max-[340px]:w-60 ${dstate && 'dd-forward'}`}>
             <ul>{dropItems}</ul>
         </div>
     </div>

@@ -5,7 +5,7 @@
 @layer utilities {
 
     * {
-        scroll-padding-top: 5rem;
+        scroll-padding-top: 10rem;
     }
     
     html {
@@ -37,6 +37,15 @@
 
     .menu-height {
         height: calc(100vh - 3.25rem)
+    }
+
+    .dd-forward{
+        animation: grow 0.5s;
+    }
+
+    @keyframes grow{
+        0% {max-height: 0;}
+        100% {max-height: 16rem;}
     }
 
 }

@@ -33,11 +33,11 @@ const Dropdown:React.FC<dropdownProps> = ({items,content,setContent}) => {
 
   return (
     <div className="mb-16 max-lg:mb-12 max-sm:px-6" ref={divRef}>
-        <div className="shadow-2xl cursor-pointer text-ellipsis px-2 border-2 overflow-x-hidden border-black rounded py-2 w-60 bg-black text-white max-lg:w-96 max-sm:w-72 max-[340px]:w-60"
+        <div className="shadow-2xl cursor-pointer text-ellipsis px-2 border-2 overflow-x-hidden border-black rounded py-2 w-72 bg-black text-white max-lg:w-96 max-sm:w-64 max-[340px]:w-60"
             onClick={()=>{setDstate(!dstate)}}>
             <h3 className="font-sans text-3xl max-sm:text-2xl whitespace-nowrap mx-2 overflow-hidden">{content}</h3>
         </div>
-        <div className={`shadow-2xl bg-gray-100 absolute border-2 border-black rounded mt-2 py-2 w-60 max-h-64 overflow-y-auto ${!dstate && 'hidden'} max-lg:w-96 max-sm:w-72 max-[340px]:w-60 ${dstate && 'dd-forward'}`}>
+        <div className={`shadow-2xl bg-gray-100 absolute border-2 border-black rounded mt-2 py-2 w-72 max-h-64 overflow-y-auto ${!dstate && 'hidden'} max-lg:w-96 max-sm:w-64 max-[340px]:w-60 ${dstate && 'dd-forward'}`}>
             <ul>{dropItems}</ul>
         </div>
     </div>
